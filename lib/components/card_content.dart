@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-const labelTextStyle = TextStyle(fontSize: 18.0, color: Color(0xff8d8e98));
+import '../constants.dart';
+
 class CardContent extends StatelessWidget {
   final String label;
   final IconData icon;
@@ -20,8 +21,9 @@ class CardContent extends StatelessWidget {
           height: 15.0,
         ),
         Text(label,
-            style: labelTextStyle)
+            style: kLabelTextStyle)
       ],
     );
   }
 }
+
